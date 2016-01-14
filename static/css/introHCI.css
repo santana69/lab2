@@ -12,18 +12,35 @@
 /* this style exists to make it obvious that you've successfully linked
    the CSS to the page. feel free to remove it once the link is working. */
 body {
-     border: 1px dotted gray;
-     padding: 20px;
+     /* Since we have a fixed navbar, it covers content */
+     padding-top: 50px;
+}
+
+.navbar {
+     background-color: #F0F8FF;
+     border-color: #B0C0E0;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus,
+.nav > li > a:hover,
+.nav > li > a:focus {
+     background-color: #B0C0E0;
+}
+
+.bottom-background {
+     background-color: #F0F8FF;
+     padding-bottom : 20px;
 }
 
 .jumbotron {
-	position: relative;
 	background: none;
 }
 
 .jumbotron:after {
      content:"";
-     background: url("http://lorempixel.com/1140/283");
+     background: url("../images/main_background.jpg");
      opacity: 0.2;
      top: 0;
      left: 0;
